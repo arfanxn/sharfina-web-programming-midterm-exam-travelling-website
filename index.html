@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Travel Adventure</title>
+		<style>
+			/* --- Content styling --- */
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #008080;
+				color: #ffffff;
+			}
+			h1,
+			h2 {
+				color: #fff;
+			}
+			p {
+				font-style: italic;
+				color: lightgray;
+			}
+			a {
+				color: #fce09b;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			section {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			/* --- Table styling --- */
+			table,
+			th,
+			td {
+				border: 1px solid #b2533e;
+			}
+			table {
+				max-width: 25%;
+				border-collapse: collapse;
+			}
+			th {
+				border-color: #fff;
+				color: #fff;
+				padding: 10px;
+				text-align: left;
+			}
+			td {
+				color: #fff;
+				border: 1px solid #dddddd;
+				padding: 8px;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="main-container">
+			<header>
+				<h1>Welcome to Travel Adventure</h1>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li>
+						<a href="#popular-destinations">Popular Destinations</a>
+					</li>
+					<li><a href="#destinations">Destinations</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<main>
+				<section id="home">
+					<h2>Explore Exciting Places</h2>
+					<p>
+						Plan your next adventure and discover the beauty of the
+						world.
+					</p>
+				</section>
+
+				<section id="popular-destinations">
+					<h2>Popular Destinations</h2>
+					<ul>
+						<li>
+							<a href="#">
+								<img
+									src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+									alt="Paris"
+									width="300"
+									height="200"
+								/>
+								<h3>Seoul</h3>
+								<p>The City of Entertainments</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img
+									src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80"
+									alt="Tokyo"
+									width="300"
+									height="200"
+								/>
+								<h3>Tokyo</h3>
+								<p>Experience the vibrant culture of Tokyo.</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section id="destinations">
+					<h2>Destinations</h2>
+					<table>
+						<tr>
+							<th colspan="2">Country</th>
+							<th rowspan="2">
+								One week travel price estimation
+							</th>
+						</tr>
+						<tr>
+							<th colspan="2">Description</th>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<b>Korea</b> <br />
+								Korea (Korean: 한국, Hanguk in South Korea or
+								조선, Joseon in North Korea) is a peninsular
+								region in East Asia. Since 1945, it has been
+								divided at or near the 38th parallel, now known
+								as the Korean Demilitarized Zone, with South
+								Korea (Republic of Korea) comprising its
+								southern half and North Korea (Democratic
+								People's Republic of Korea) comprising its
+								northern half.
+							</td>
+							<td>$5000 ~ $7000</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<b>Japan</b> <br />
+								Japan (Japanese: 日本, [ɲihoɴ], Nippon or Nihon,
+								and formally 日本国, Nippon-koku or Nihon-koku)
+								is an island country in East Asia. It is in the
+								northwest Pacific Ocean and is bordered on the
+								west by the Sea of Japan, extending from the Sea
+								of Okhotsk in the north toward the East China
+								Sea, Philippine Sea, and Taiwan in the south.
+							</td>
+							<td>$6000 ~ $10000</td>
+						</tr>
+					</table>
+				</section>
+
+				<section id="about">
+					<h2>About</h2>
+					<p>
+						This is a travelling website to helps people who want to
+						travel around the world
+					</p>
+				</section>
+
+				<section id="contact">
+					<h2>Contact</h2>
+					<form action="file.php" method="post">
+						<div>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div>
+							<label for="email">Email:</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+							/>
+						</div>
+
+						<div>
+							<label>Gender:</label>
+							<input
+								type="radio"
+								id="male"
+								name="gender"
+								value="male"
+								required
+							/>
+							<label for="male">Male</label>
+							<input
+								type="radio"
+								id="female"
+								name="gender"
+								value="female"
+								required
+							/>
+							<label for="female">Female</label>
+						</div>
+
+						<div>
+							<label for="negara">Destination country:</label>
+							<select id="negara" name="negara" required>
+								<option value="korea">Korea</option>
+								<option value="japan">Japan</option>
+							</select>
+						</div>
+
+						<div>
+							<label>Destination places:</label>
+							<input
+								type="checkbox"
+								id="city"
+								name="city"
+								value="city"
+							/>
+							<label for="city">City</label>
+							<input
+								type="checkbox"
+								id="town"
+								name="town"
+								value="town"
+							/>
+							<label for="town">Town</label>
+						</div>
+						<div>
+							<label for="note">Note:</label><br />
+							<textarea
+								id="note"
+								name="note"
+								rows="4"
+								cols="50"
+							></textarea>
+						</div>
+						<input type="submit" value="Submit" />
+					</form>
+				</section>
+			</main>
+
+			<footer>
+				<p>&copy; 2023 Travel Adventure</p>
+			</footer>
+		</main>
+	</body>
+</html>
